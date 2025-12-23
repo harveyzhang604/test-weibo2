@@ -1,0 +1,26 @@
+{
+  "api": {
+    "weibo_hotsearch_url": "https://your-weibo-api-endpoint.com/hotsearch",
+    "timeout": 10,
+    "retry_count": 3
+  },
+  "scoring": {
+    "interestingness_weight": 0.8,
+    "usefulness_weight": 0.2,
+    "excellent_threshold": 80,
+    "good_threshold": 60
+  },
+  "analysis": {
+    "max_topics": 20,
+    "search_delay": 0.5
+  },
+  "openai": {
+    "model": "gpt-3.5-turbo",
+    "temperature": 0.8,
+    "max_tokens": 1000
+  },
+  "report": {
+    "template_file": "report_template.html",
+    "include_summary": true
+  }
+}
